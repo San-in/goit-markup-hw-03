@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,32 +19,36 @@
   </head>
   <body>
     <header class="header">
-      <a href="./index.html" class="header-logo logo"> <span class="accent">Web</span>Studio</a>
-      <nav class="header-navigation">
-        <ul class="header-navigation-list">
-          <li class="header-navigation-item">
-            <a href="./index.html" class="header-navigation-link hover-accent active">Студія</a>
+      <div class="conteiner header-conteiner">
+        <a href="./index.html" class="header-logo logo"> <span class="accent">Web</span>Studio</a>
+        <nav class="header-navigation">
+          <ul class="header-navigation-list">
+            <li class="header-navigation-item">
+              <a href="./index.html" class="header-navigation-link hover-accent active">Студія</a>
+            </li>
+            <li class="header-navigation-item">
+              <a href="./portfolio.html" class="header-navigation-link hover-accent">Портфоліо</a>
+            </li>
+            <li class="header-navigation-item">
+              <a href="" class="header-navigation-link hover-accent">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contact">
+          <li class="header-contact-email">
+            <a
+              href="mailto:info@devstudio.com"
+              class="header-contact-link hover-accent link-inherit"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="header-navigation-item">
-            <a href="./portfolio.html" class="header-navigation-link hover-accent">Портфоліо</a>
-          </li>
-          <li class="header-navigation-item">
-            <a href="" class="header-navigation-link hover-accent">Контакти</a>
+          <li class="header-contact-tel">
+            <a href="tel:+380961111111" class="header-contact-link hover-accent link-inherit"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="header-contact">
-        <li class="header-contact-email">
-          <a href="mailto:info@devstudio.com" class="header-contact-link hover-accent link-inherit"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-contact-tel">
-          <a href="tel:+380961111111" class="header-contact-link hover-accent link-inherit"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main class="main">
       <section class="hero">
