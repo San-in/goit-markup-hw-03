@@ -75,6 +75,8 @@ body {
 }
 
 .section-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
@@ -133,30 +135,50 @@ body {
 /* Hero */
 
 .hero {
+  text-align: center;
   background-color: var(--color-bgr-dark);
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-size: 44px;
   line-height: calc(60 / 44);
   font-weight: 900;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
 }
 
 .hero-btn {
+  padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: var(--color-white);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   background-color: var(--color-accent);
 }
 
 /* Benefits */
 
+.benefits-conteiner {
+  padding-top: 94px;
+}
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.benefits-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
 .benefits-subtitle {
   line-height: calc(16 / 14);
   text-transform: uppercase;
@@ -164,14 +186,46 @@ body {
 }
 
 /* Works */
+.works-conteiner,
+.team-conteiner {
+  padding: 94px 0;
+}
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+}
+.works-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+.works-item:not(:last-child) {
+  margin-right: 30px;
+}
+.works-img {
+  display: block;
+}
 
 /* Team */
 
 .team {
   background-color: var(--color-bgr-grey);
 }
+.team-list {
+  display: flex;
+}
+.team-item {
+  flex-basis: calc((100% - 90px) / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .team-subtitle {
+  margin-bottom: 10px;
+
   font-size: 16px;
   line-height: calc(19 / 16);
   font-weight: 500;
@@ -183,13 +237,28 @@ body {
   line-height: calc(19 / 16);
 }
 
-/* Footer */
+.team-img {
+  display: block;
+  min-width: 100%;
+}
+.team-text {
+  background-color: var(--color-white);
+  padding: 30px 70px;
+  text-align: center;
+  white-space: nowrap;
+}
 
+/* Footer */
+.footer-conteiner {
+  padding: 60px 0;
+}
 .footer {
   background-color: var(--color-bgr-dark);
 }
 
 .footer-logo {
+  display: inline-block;
+  padding-bottom: 20px;
   color: var(--color-white);
 }
 
@@ -204,7 +273,9 @@ body {
 .footer-contact-tel {
   opacity: 0.6;
 }
-
+.footer-contact li:not(:last-child) {
+  margin-bottom: 9px;
+}
 /* Portfolio */
 
 .filter-btn {
