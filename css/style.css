@@ -11,18 +11,15 @@ ul {
   padding: 0;
 }
 a,
-a:visited {
-  text-decoration: none;
-}
+a:visited,
 a:hover {
   text-decoration: none;
 }
+
 ul li {
   list-style: none;
 }
-button {
-  cursor: pointer;
-}
+
 input,
 button,
 textarea {
@@ -38,6 +35,21 @@ a:active {
 address {
   font-style: normal;
 }
+button {
+  cursor: pointer;
+}
+
+/* Прибив футер до низу */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main {
+  flex: 1 1 auto;
+}
+
 /* Змінні */
 :root {
   --color-accent: #2196f3;
@@ -132,6 +144,13 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.team-img,
+.works-img,
+.portfolio-img {
+  display: block;
+  width: 100%;
+}
 /* Hero */
 
 .hero {
@@ -201,9 +220,6 @@ body {
 .works-item:not(:last-child) {
   margin-right: 30px;
 }
-.works-img {
-  display: block;
-}
 
 /* Team */
 
@@ -237,10 +253,6 @@ body {
   line-height: calc(19 / 16);
 }
 
-.team-img {
-  display: block;
-  min-width: 100%;
-}
 .team-text {
   background-color: var(--color-white);
   padding: 30px 70px;
@@ -286,6 +298,7 @@ body {
   color: var(--color-bold);
   background-color: var(--color-bgr-grey);
 }
+.filter-btn.active-btn,
 .filter-btn:hover,
 .filter-btn:focus {
   padding: 6px 25px;
@@ -295,12 +308,6 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-list-title {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--color-bold);
-}
 .portfolio-category {
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -321,6 +328,30 @@ body {
   margin-right: 8px;
 }
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: -15px;
+}
+.portfolio-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin: 15px;
+}
+.portfolio-list-title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-bold);
+}
+.portfolio-text {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
 /*Службові теги*/
 .accent {
   color: var(--color-accent);
@@ -330,8 +361,4 @@ body {
 }
 .link-inherit {
   color: inherit;
-}
-.active-btn {
-  color: var(--color-white);
-  background-color: var(--color-accent);
 }
