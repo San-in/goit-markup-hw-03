@@ -102,6 +102,10 @@ body {
 }
 
 /* Header */
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-conteiner {
   display: flex;
   align-items: center;
@@ -151,6 +155,10 @@ body {
   display: block;
   width: 100%;
 }
+
+.section {
+  padding: 94px 0;
+}
 /* Hero */
 
 .hero {
@@ -185,9 +193,6 @@ body {
 
 /* Benefits */
 
-.benefits-conteiner {
-  padding-top: 94px;
-}
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
@@ -205,14 +210,10 @@ body {
 }
 
 /* Works */
-.works-conteiner,
-.team-conteiner {
-  padding: 94px 0;
-}
+
 .works-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 .works-item {
   flex-basis: calc((100% - 60px) / 3);
@@ -311,9 +312,6 @@ body {
 .portfolio-category {
   font-size: 16px;
   line-height: calc(30 / 16);
-}
-.portfolio-conteiner {
-  padding: 94px 0;
 }
 .portfolio-filter {
   display: flex;
