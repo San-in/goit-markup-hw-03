@@ -150,13 +150,9 @@ body {
 }
 /* Hero */
 
-.hero.section {
-  padding: 200px 0;
-}
 .hero {
   background-color: var(--color-bgr-dark);
-}
-.hero-content {
+  padding: 200px 0;
   text-align: center;
 }
 
@@ -199,6 +195,7 @@ body {
   margin-right: 30px;
 }
 .benefits-subtitle {
+  margin-bottom: 10px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--color-bold);
@@ -260,16 +257,14 @@ body {
 }
 
 /* Footer */
-.footer-wrap {
-  padding: 60px 0;
-}
 .footer {
   background-color: var(--color-bgr-dark);
+  padding: 60px 0;
 }
 
 .footer-logo {
   display: inline-block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   color: var(--color-white);
 }
 
