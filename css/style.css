@@ -39,17 +39,6 @@ button {
   cursor: pointer;
 }
 
-/* Прибив футер до низу */
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-.main {
-  flex: 1 1 auto;
-}
-
 /* Змінні */
 :root {
   --color-accent: #2196f3;
@@ -106,7 +95,7 @@ body {
 .header {
   border-bottom: 1px solid #ececec;
 }
-.header-conteiner {
+.header-flex {
   display: flex;
   align-items: center;
 }
@@ -161,13 +150,19 @@ body {
 }
 /* Hero */
 
+.hero.section {
+  padding: 200px 0;
+}
 .hero {
-  text-align: center;
   background-color: var(--color-bgr-dark);
+}
+.hero-content {
+  text-align: center;
 }
 
 .hero-title {
-  margin-bottom: 30px;
+  max-width: 696px;
+  margin: 0 auto 30px;
 
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -210,7 +205,9 @@ body {
 }
 
 /* Works */
-
+.works.section {
+  padding-top: 0;
+}
 .works-list {
   display: flex;
   flex-wrap: wrap;
@@ -256,13 +253,14 @@ body {
 
 .team-text {
   background-color: var(--color-white);
-  padding: 30px 70px;
+  padding: 30px;
   text-align: center;
   white-space: nowrap;
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Footer */
-.footer-conteiner {
+.footer-wrap {
   padding: 60px 0;
 }
 .footer {
@@ -359,4 +357,16 @@ body {
 }
 .link-inherit {
   color: inherit;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }

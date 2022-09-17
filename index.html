@@ -18,9 +18,9 @@
     />
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="conteiner header-conteiner">
+    <header class="header">
+      <div class="conteiner">
+        <div class="header-flex">
           <a href="./index.html" class="header-logo logo"> <span class="accent">Web</span>Studio</a>
           <nav class="header-navigation">
             <ul class="header-navigation-list">
@@ -50,143 +50,145 @@
             </li>
           </ul>
         </div>
-      </header>
-      <main class="main">
-        <section class="hero section">
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero section">
+        <div class="hero-content">
           <h1 class="hero-title">
-            Ефективні рішення для <br />
-            вашого бізнесу
+            Ефективні рішення для вашого бізнесу
           </h1>
           <button type="button" class="hero-btn">Замовити послугу</button>
-        </section>
-        <section class="benefits section"">
-          <div class="conteiner benefits-conteiner">
-            <h2 class="section-title" hidden>Наші переваги</h2>
-            <!-- приховати заголовок через СSS -->
-            <ul class="benefits-list">
-              <li class="benefits-item">
-                <h3 class="benefits-subtitle">Увага до деталей</h3>
-                <p class="benefits-text">
-                  Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-                </p>
-              </li>
-              <li class="benefits-item">
-                <h3 class="benefits-subtitle">Пунктуальність</h3>
-                <p class="benefits-text">
-                  Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-                </p>
-              </li>
-              <li class="benefits-item">
-                <h3 class="benefits-subtitle">Планування</h3>
-                <p class="benefits-text">
-                  Так само консультація з широким активом значною мірою зумовлює.
-                </p>
-              </li>
-              <li class="benefits-item">
-                <h3 class="benefits-subtitle">Сучасні технології</h3>
-                <p class="benefits-text">
-                  Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="works section"">
-          <div class="conteiner works-conteiner">
-            <h2 class="section-title">Чим ми займаємося</h2>
-            <ul class="works-list">
-              <li class="works-item">
-                <img
-                  class="works-img"
-                  src="./images/works-1.jpg"
-                  alt="Робоче місце з планшетом"
-                  width="370"
-                  height="294"
-                />
-              </li>
-              <li class="works-item">
-                <img
-                  class="works-img"
-                  src="./images/works-2.jpg"
-                  alt="Телефон з ноутбуком"
-                  width="370"
-                  height="294"
-                />
-              </li>
-              <li class="works-item">
-                <img
-                  class="works-img"
-                  src="./images/works-3.jpg"
-                  alt="Планшет з зображенням кольорової палітри"
-                  width="370"
-                  height="294"
-                />
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="team section"">
-          <div class="conteiner team-conteiner">
-            <h2 class="section-title">Наша команда</h2>
-            <ul class="team-list">
-              <li class="team-item">
-                <img
-                  class="team-img"
-                  src="./images/igor.jpg"
-                  alt="Дизайнер проектів"
-                  width="270"
-                  height="260"
-                />
-                <div class="team-text">
-                  <h3 class="team-subtitle">Ігор Дем'яненко</h3>
-                  <p lang="en" class="team-description">Product Designer</p>
-                </div>
-              </li>
-              <li class="team-item">
-                <img
-                  class="team-img"
-                  src="./images/olga.jpg"
-                  alt="Фронтенд розробник"
-                  width="270"
-                  height="260"
-                />
-                <div class="team-text">
-                  <h3 class="team-subtitle">Ольга Рєпіна</h3>
-                  <p lang="en" class="team-description">Frontend Developer</p>
-                </div>
-              </li>
-              <li class="team-item">
-                <img
-                  class="team-img"
-                  src="./images/mykola.jpg"
-                  alt="Маркетинг"
-                  width="270"
-                  height="260"
-                />
-                <div class="team-text">
-                  <h3 class="team-subtitle">Микола Тарасов</h3>
-                  <p lang="en" class="team-description">Marketing</p>
-                </div>
-              </li>
-              <li class="team-item">
-                <img
-                  class="team-img"
-                  src="./images/myhaylo.jpg"
-                  alt="ІЕ Дизайнер"
-                  width="270"
-                  height="260"
-                />
-                <div class="team-text">
-                  <h3 class="team-subtitle">Михайло Єрмаков</h3>
-                  <p lang="en" class="team-description">UI Designer</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="conteiner footer-conteiner">
+        </div>
+      </section>
+      <section class="benefits section"">
+        <div class="conteiner">
+          <h2 class="section-title visually-hidden">Наші переваги</h2>
+          <ul class="benefits-list">
+            <li class="benefits-item">
+              <h3 class="benefits-subtitle">Увага до деталей</h3>
+              <p class="benefits-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
+            <li class="benefits-item">
+              <h3 class="benefits-subtitle">Пунктуальність</h3>
+              <p class="benefits-text">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
+            </li>
+            <li class="benefits-item">
+              <h3 class="benefits-subtitle">Планування</h3>
+              <p class="benefits-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="benefits-item">
+              <h3 class="benefits-subtitle">Сучасні технології</h3>
+              <p class="benefits-text">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="works section"">
+        <div class="conteiner">
+          <h2 class="section-title">Чим ми займаємося</h2>
+          <ul class="works-list">
+            <li class="works-item">
+              <img
+                class="works-img"
+                src="./images/works-1.jpg"
+                alt="Робоче місце з планшетом"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="works-item">
+              <img
+                class="works-img"
+                src="./images/works-2.jpg"
+                alt="Телефон з ноутбуком"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="works-item">
+              <img
+                class="works-img"
+                src="./images/works-3.jpg"
+                alt="Планшет з зображенням кольорової палітри"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="team section"">
+        <div class="conteiner">
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="team-list">
+            <li class="team-item">
+              <img
+                class="team-img"
+                src="./images/igor.jpg"
+                alt="Дизайнер проектів"
+                width="270"
+                height="260"
+              />
+              <div class="team-text">
+                <h3 class="team-subtitle">Ігор Дем'яненко</h3>
+                <p lang="en" class="team-description">Product Designer</p>
+              </div>
+            </li>
+            <li class="team-item">
+              <img
+                class="team-img"
+                src="./images/olga.jpg"
+                alt="Фронтенд розробник"
+                width="270"
+                height="260"
+              />
+              <div class="team-text">
+                <h3 class="team-subtitle">Ольга Рєпіна</h3>
+                <p lang="en" class="team-description">Frontend Developer</p>
+              </div>
+            </li>
+            <li class="team-item">
+              <img
+                class="team-img"
+                src="./images/mykola.jpg"
+                alt="Маркетинг"
+                width="270"
+                height="260"
+              />
+              <div class="team-text">
+                <h3 class="team-subtitle">Микола Тарасов</h3>
+                <p lang="en" class="team-description">Marketing</p>
+              </div>
+            </li>
+            <li class="team-item">
+              <img
+                class="team-img"
+                src="./images/myhaylo.jpg"
+                alt="ІЕ Дизайнер"
+                width="270"
+                height="260"
+              />
+              <div class="team-text">
+                <h3 class="team-subtitle">Михайло Єрмаков</h3>
+                <p lang="en" class="team-description">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="conteiner">
+        <div class="footer-wrap">
           <a class="footer-logo logo" href="./index.html">
             <p><span class="accent">Web</span>Studio</p></a
           >
@@ -216,8 +218,8 @@
               </li>
             </ul>
           </div>
-        </address>
-      </footer>
-    </div>
+        </div>
+      </address>
+    </footer>
   </body>
 </html>
